@@ -4,24 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QDS</title>
+  <link rel="stylesheet" href="css.css">
   <link rel="stylesheet" href="style.css">
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+<link rel="icon" type="image/png" sizes="32x32" href="/qds/Pages/icons/qdssmalllogo.png">
 </head>
 <body>
   <header>
-    <div class="bg-slider">
+    <div class="bg-slider animate-on-scroll">
       <div class="slide-wrapper">
         <div class="slider">
-          <div class="slide" style="background-image: url('Pages/images/bg/bg1.jpg');">
+          <div class="slide" style="background-image: url('Pages/images/bg/bg1.jpeg');">
             <div class="slide-contents">
               <h2></h2>
               
             </div>
           </div>
-          <div class="slide" style="background-image: url('Pages/images/bg/bg2.jpg');"></div>
+          <div class="slide" style="background-image: url('Pages/images/bg/bg2.jpeg');"></div>
           <div class="slide" style="background-image: url('Pages/images/bg/bg3.jpg');"></div>
           <button class="prev">&#8592;<span> Previous</span> </button>
           <button class="next"><span> Next</span> &#8594;</button>
@@ -43,6 +45,7 @@
           <li><a href="#clients">Clients</a></li>
           <li><a href="#project">Projects</a></li>
           <li><a href="#getin">Contact Us</a></li>
+          <li><a href="career.html">Career</a></li>
         </ul>
       </div>
       
@@ -64,7 +67,7 @@
 
     </div>
   </header>
-  <section class="mid-about" id="aboutus">
+  <section class="mid-about animate-on-scroll" id="aboutus">
     <div class="about-content">
       <div class="title">
         <h2>About <span class="q_red">QDS</span> </h2>
@@ -163,7 +166,7 @@
       </div>
     </div>
   </section> -->
-  <section class="projects project-content" id="project">
+  <section class="projects project-content animate-on-scroll" id="project">
     <div class="title">
       <h2 >OUR <span class="q_red">PROJECTS</span> </h2>
     </div>
@@ -275,22 +278,22 @@
   </section>
 
   <!-- clients -->
-   <section class="clients" id="clients">
+   <section class="clients animate-on-scroll" id="clients">
     <div class="client-wrapper">
       <div class="title">
         <h2>our <span class="q_red">Clients</span></h2>
       </div>
       <div class="client-list">
         <ul>
-          <li><a href="#">
+          <li><a >
             <img src="Pages/icons/absal_paul.jpg" alt="">
           </a></li>
-          <li><a href="#">
+          <li><a >
             <img src="Pages/icons/alyamama.jpg" alt="">
           </a></li>
-          <li style="align-self: center;"><a href="#"><img src="Pages/icons/baysidebuilding.jpg" alt=""></a></li>
-          <li><a href="#"><img src="Pages/icons/bcg.jpg" alt=""></a></li>
-          <li><a href="#"><img src="Pages/icons/cbre.jpg" alt=""></a></li>
+          <li style="align-self: center;"><a ><img src="Pages/icons/baysidebuilding.jpg" alt=""></a></li>
+          <li><a ><img src="Pages/icons/bcg.jpg" alt=""></a></li>
+          <li><a ><img src="Pages/icons/cbre.jpg" alt=""></a></li>
           <!-- <li><a href="#"><img src="/Pages/icons/egec.jpg" alt=""></a></li>
           <li><a href="#"><img src="/Pages/icons/gpzgroup.jpg" alt=""></a></li>
           <li><a href="#"><img src="/Pages/icons/isg.jpg" alt=""></a></li> -->
@@ -322,59 +325,58 @@
       </div>
     </section> -->
 <!-- get in touch -->
- <section class="getin" id="getin">
+ <section class="getin animate-on-scroll" id="getin">
   <div class="getin-wrapper">
     <div class="title">
       <h2>get <span class="q_red">in touch</span></h2>
     </div>
     <div class="getin-content">
       <div class="address-col">
-       <div class="content">
-        <h3><strong>Quantum Drafting System</strong></h3>
-        <!-- <br>
-        <h5>IWWA Building 3rd Floor 10(P)</h5>
-        <br>
-        <h5>7th Main, BTM 2nd Stage</h5>
-        <br>
-        -->
-        <br> 
-        <h5>Email:</h5>
-        <h5><a href="mailto:quantumdraftingsystem@gmail.com">quantumdraftingsystem@gmail.com</a></h5>
-        <br>
-        <h5><a href="tel:+971545694264">Mobile : +971545694264</a></h5>
-        <h5><a href="tel:+919072939697">Phone : +919072939697</a></h5>
-       </div>
+        <div class="content">
+          <h3><strong>Quantum Drafting System</strong></h3>
+          <br> 
+          <h5>Email:</h5>
+          <h5><a href="mailto:quantumdraftingsystem@gmail.com">quantumdraftingsystem@gmail.com</a></h5>
+          <br>
+          <h5><a href="tel:+971545694264">Mobile : +971545694264</a></h5>
+          <h5><a href="tel:+919072939697">Phone : +919072939697</a></h5>
+        </div>
       </div>
       <div class="contact-form">
-        <form>
+        <form id="contactForm">
           <div class="form-group">
-            <input type="text" placeholder="Name *">
-            <input type="email" placeholder="Email *">
+            <input type="text" placeholder="Name *" required>
+            <input type="email" placeholder="Email *" required>
           </div>
           <div class="form-group">
-
-            <input type="text" placeholder="Mobile *">
+            <input type="text" placeholder="Mobile *" required>
             <input type="text" placeholder="Company">
           </div>
           <div class="message form-group">
-            <input name="" id="" placeholder="Message *"></input>
+            <textarea placeholder="Message *" required></textarea>
           </div>
           <div class="contactBtn form-group">
-            <button class="btn" type="submit">Send <span style="font-size:large;margin-left: 8px;">&#8594;</span> </button>
+            <button class="btn" type="submit">
+              Send <span style="font-size:large;margin-left: 8px;">&#8594;</span>
+            </button>
           </div>
         </form>
+        <!-- Thank you message container -->
+        <div id="thankMessage" style="display:none; margin-top:15px; color:green; font-weight:bold;">
+          ✅ Thank you! Your message has been received.
+        </div>
       </div>
     </div>
   </div>
- </section>
+</section>
   <footer>
     <div class="container">
       <div class="content">
         <div class="col">
           <ul>
             <li><a href=""><img class="pdfIcon" src="Pages/icons/icons8-pdf-50.png" alt=""> PROFESSIONAL INDEMNITY INSURANCE</a></li>
-            <li class="footer-atag"><a href=""><span class="footer-atag">CAREER</span> </a></li>
-            <li class="footer-atag"><a href=""><span class="footer-atag">EMPLOYEE LOGIN</span> </a></li>
+            <li class="footer-atag"><a href="/qds/career.html"><span class="footer-atag">CAREER</span> </a></li>
+            <li class="footer-atag"><a href="/qds/userlogin.html"><span class="footer-atag">EMPLOYEE LOGIN</span> </a></li>
             <li><a><span class="copy-right">© 2024 JSYS.ENGINEERING</span> </a></li>
           </ul>
         </div>
@@ -383,6 +385,37 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    // Animate only elements with the class
+    document.querySelectorAll(".animate-on-scroll").forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+<script>
+ document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // stop actual form submission
+    
+    // optional: clear form fields immediately
+    this.reset(); 
+    
+    // wait 1 second (1000 ms) before showing thank message
+    setTimeout(function() {
+      document.getElementById("thankMessage").style.display = "block";
+    }, 1000);
+  });
+</script>
+
+
   <script src="script.js"></script>
   <script src="script2.js"></script>
 </body>

@@ -1,0 +1,92 @@
+:root {
+  --brand-primary: #4a90e2;   /* main accent (blue) */
+  --brand-secondary: #6b4f3b; /* subtle brown tone */
+  --text-color: #333;
+  --bg-color: #fff;
+   --q_red:#6f6041;
+  --bg_grey:#e8e8e8;
+}
+
+header {
+  background-color: #ccc;
+  background-image: url('./Pages/images/bg/bg_dubai.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+/* Container */
+
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.login{
+    background-color: var(--bg_grey);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 330px;
+    width: 100%;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.login h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.login form input{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.login form button{
+    padding: 10px;
+    color: #fff;
+    background-color: var(--q_red);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login form button:hover{
+    background-color: var(--brand-secondary);
+}
+
+@media (max-width: 600px) {
+    .login{
+        
+        max-width: 220px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    header{
+        background-color: #ccc;
+    }
+    nav{
+        background-color: rgba(254, 254, 254, 0.466);
+    }
+    .vertical-panel{
+        display: none;
+    }
+    .vertical-panel-du{
+        display: none;
+    }
+    
+}

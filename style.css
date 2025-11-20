@@ -32,7 +32,6 @@
     margin: 0;
     padding: 0;
     font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
 }
 body{
   font-family: "Oswald", sans-serif;
@@ -361,6 +360,13 @@ footer .container .content .col ul{
   list-style: none;
   justify-content: flex-end;
   gap: 25px;
+  transition: all 0.3s;
+  :nth-child(2), :nth-child(3){
+    :hover{
+      transition: all 0.3s;
+      color: black;
+    } 
+  }
 }
 footer .container .content .col ul li a{
   text-decoration: none;
@@ -440,7 +446,7 @@ footer .container .content .col ul li a{
 .form-group{
   display: flex;
 }
-.form-group input{
+.form-group input, .form-group textarea{
     margin:0 25px 25px 0 ;
     width: 100%;
     font-size: 1em;
@@ -457,9 +463,31 @@ footer .container .content .col ul li a{
     -o-transition: all .15s;
     transition: all .15s;
 }
-.message input{
+.message textarea{
   height: 8em;
+  padding-top: 10px;
 }
+
+#thankMessage {
+  display: none;              /* hidden by default */
+  margin-top: 20px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background-color: #e6f4ea;  /* soft green background */
+  color: #2e7d32;             /* deep green text */
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* Optional fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .contactBtn button{
   padding: 15px 40px;
   outline: none;
@@ -555,7 +583,12 @@ footer .container .content .col ul li a{
   
     }
   }
-       
+    
+  .col ul{
+    :nth-child(2){
+      margin-right: 105px;
+    }
+  }
        /* 
   .nav-items{
     overflow-y: hidden;

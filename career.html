@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/qds/Pages/icons/qdssmalllogo.png">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="career.css" />
+  </head>
+  <body>
+    <header>
+      <div class="bg-slider animate-on-scroll">
+        <div class="slide-wrapper">
+          <div class="slider">
+            <h1>Career Page</h1>
+            <p>Join our team and build your future with us!</p>
+
+            </div>
+        </div>
+      </div>
+      <nav>
+        <div class="brand-logo">
+          <img id="brandLogo1" src="Pages/icons/qdslogofull.png" alt="" />
+          <img id="brandLogo2" src="Pages/icons/qdssmalllogo.png" alt="" />
+          <div class="res-items">
+            <img
+              id="navBtn"
+              src="Pages/images/icon/icons8-menu-50.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="nav-items">
+          <ul>
+            <li class=""><a href="index.html">home</a></li>
+            <li><a href="/qds/index.html#aboutus">About Us</a></li>
+            <li><a href="/qds/index.html#clients">Clients</a></li>
+            <li><a href="/qds/index.html#project">Projects</a></li>
+            <li><a href="/qds/index.html#getin">Contact Us</a></li>
+            <li class="nav-active"><a href="career.html">Career</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="vertical-panel-du"></div>
+      <div class="vertical-panel">
+        <div class="vertical-panel-content">
+          <img
+            href="#"
+            src="Pages/images/icon/facebook-f-brands-solid.svg"
+            class="vertical-panel-icons"
+            alt="Facebook"
+          />
+
+          <br />
+
+          <img
+            src="Pages/images/icon/linkedin-in-brands-solid.svg"
+            class="vertical-panel-icons"
+            alt="LinkedIn"
+          />
+        </div>
+      </div>
+    </header>
+
+    <div class="container-career">
+<h2>Job Application</h2>
+
+
+<form>
+<label>Full Name *</label>
+<input type="text" placeholder="Enter your full name" required />
+
+
+<label>Email *</label>
+<input type="email" placeholder="Enter your email" required />
+
+
+<label>Phone *</label>
+<input type="tel" placeholder="Enter your phone number" required />
+
+
+<label>Cover Letter</label>
+<textarea placeholder="Write a short cover letter..."></textarea>
+
+
+<label>Upload CV *</label>
+<input type="file" accept=".pdf,.doc,.docx" required />
+<div class="file-text">Allowed: PDF, DOC, DOCX</div>
+
+
+<button type="submit">Submit Application</button>
+</form>
+</div>
+<style>
+.custom-alert{
+position:fixed;
+top:20px;
+right:20px;
+background:#6f6041;
+color:#fff;
+padding:15px 20px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.15);
+font-size:15px;
+opacity:0;
+transform:translateY(-10px);
+transition:all .3s ease;
+z-index:9999;
+}
+.custom-alert.show{
+opacity:1;
+transform:translateY(0);
+}
+</style>
+
+
+<div id="alertBox" class="custom-alert">Thank you for applying. We will get back to you soon.</div>
+    <footer>
+    <div class="container">
+      <div class="content">
+        <div class="col">
+          <ul>
+            <li><a href=""><img class="pdfIcon" src="Pages/icons/icons8-pdf-50.png" alt=""> PROFESSIONAL INDEMNITY INSURANCE</a></li>
+            <li class="footer-atag"><a href="/qds/career.html"><span class="footer-atag">CAREER</span> </a></li>
+            <li class="footer-atag"><a href="/qds/userlogin.html"><span class="footer-atag">EMPLOYEE LOGIN</span> </a></li>
+            <li><a><span class="copy-right">© 2024 JSYS.ENGINEERING</span> </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="career.js"></script>
+  </body>
+</html>

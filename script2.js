@@ -99,19 +99,21 @@ const navLinks = navItems.querySelectorAll('ul li a');
 
 navLinks.forEach(link => {
   link.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent the default link behavior
+    const href = link.getAttribute('href');
 
-    const targetId = link.getAttribute('href').substring(1);   
- // Get the target ID
-    const targetElement = document.getElementById(targetId);
+    // Only intercept internal anchors
+    if (href && href.startsWith('#')) {
+      event.preventDefault();
+      const targetId = href.substring(1);
+      const targetElement = document.getElementById(targetId);
 
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop,   
-
-        behavior: 'smooth'   
- // Enable smooth scrolling
-      });
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
     }
+    // External links will now redirect normally
   });
 });
